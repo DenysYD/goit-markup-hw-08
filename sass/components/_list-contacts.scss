@@ -1,0 +1,35 @@
+.list-contacts {
+    margin-left: auto;
+    column-gap: 50px;
+    display: flex;
+    align-items: center;
+
+    & {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+    
+            transition: var(--timing-functione);
+        }
+}
+
+.list-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.list-contacts__link {
+    color: var(--primari-text-color-teme-light);
+    transition: color var(--timing-functione);
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+    
+        }
+
+}
