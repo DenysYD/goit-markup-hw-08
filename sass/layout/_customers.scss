@@ -1,18 +1,29 @@
 .customers__list {
     display: flex;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .customers__item {
-    width: calc((100% - 150px) / 6);
-    margin-right: 30px;
-
-
-    &:nth-child(6n) {
-        margin-right: 0;
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px;
 
         transition: fill var(--timing-functione);
+
+
+        @media screen and (min-width:768px) {
+            flex-basis: calc(100% / 3 - 30px);
+            margin-left: 30px;
         }
-}
+
+        @media screen and (min-width:1200px) {
+            flex-basis: calc(100% / 6 - 30px);
+            margin-left: 30px;
+        }
+    }
 
 .customers__link {
     display: flex;
@@ -33,7 +44,7 @@
 .customers__list>.customers__icon {
     display: flex;
     align-self: center;
-    width: 170px;
+    width: auto;
     height: 92px;
 }
 
