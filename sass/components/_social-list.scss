@@ -1,5 +1,4 @@
-.team-social-list,
-.footer-social-list {
+.social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
@@ -13,14 +12,12 @@
     height: 44px;
     border-radius: 50%;
     background-color: #ffffff;
-
     transition: background-color var(--timing-functione);
 
     &:hover,
     &:focus {
-            background-color: var(--accent-color);
-    
-        }
+        background-color: var(--accent-color);
+    }
 }
 
 .social-list__icon {
@@ -29,8 +26,7 @@
 
     .social-list__link:hover &,
     .social-list__link:focus & {
-            fill: #ffffff;
-    
+        fill: #ffffff;
     }
 }
 
@@ -39,7 +35,7 @@
 }
 
 .social-list__icon--theme_dark {
-    fill: #ffffff;
+    fill: #fff;
 }
 
 .social-list__text {
@@ -50,7 +46,6 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-
 }
 
 

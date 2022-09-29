@@ -1,19 +1,26 @@
 .creation {
-    padding-top: 0;
+    display: none;
 }
 
-.creation__list {
-    display: flex;
-}
+@media screen and (min-width: 1200px) {
 
-.creation__item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-
-    &:nth-child(3n) {
-    margin-right: 0;
+    .creation {
+        display: block;
+        padding-top: 0;
     }
-}
+
+    .creation__list {
+        display: flex;
+    }
+
+    .creation__item {
+        width: calc((100% - 60px) / 3);
+        margin-right: 30px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
 
 .creation__card {
     position: relative;
@@ -21,6 +28,10 @@
 
 .creation__text {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -33,5 +44,4 @@
     line-height: 70px;
     width: 100%;
 
-
-}
+}}

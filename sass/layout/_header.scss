@@ -1,21 +1,23 @@
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-}
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.page-header__logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-            
 }
 
 .page-header__logo-top {
     color: var(--color-logo-header);
+
 }
 
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
 
-.page-header__container {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
+@media screen and (min-width: 768px) {
+    .page-header__logo {
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+    }
 }

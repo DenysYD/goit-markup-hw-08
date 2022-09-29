@@ -9,12 +9,11 @@
 
     opacity: 1;
     transition: opacity var(--timing-functione);
+
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 }
 
-.backdrop.is-hidden.modal {
-    transform: translate(-50%, -50%) scale(0.9);
-}
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}

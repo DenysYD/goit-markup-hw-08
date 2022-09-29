@@ -1,70 +1,52 @@
-.page-nav {
-    display: flex;
-    align-items: center;
-}
-
 .page-nav__list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
+    display: none;
 }
 
-.page-nav__link {
-    padding-top: 24px;
-    padding-bottom: 25px;
+@media screen and (min-width: 768px) {
+    .page-nav {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    & {
-            color: var(--secondary-text-color-teme-light);
-            transition: color var(--timing-functione);
+    .page-nav__list {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+    }
+
+    .page-nav__link {
+        position: relative;
+        color: var(--secondary-text-color-teme-light);
+        transition: color var(--timing-functione);
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
         }
-                
-    &:hover,
-    &:focus {
-                    color: var(--accent-color);
-        
-                }
+    }
+
+    .page-nav__list .item.page-nav__link--current {
+        color: var(--accent-color);
+    }
+
+    .page-nav__link--current::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+        bottom: -2px;
+    }
 }
 
-.page-nav__list {
-
-    transition: var(--timing-functione);
-}
-
-.page-nav__list .item.page-nav__link--current {
-    color: var(--accent-color);
-    position: relative;
-}
-
-.page-nav__list .page-nav__link::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    opacity: 0;
-    transition: opacity var(--timing-functione);
-}
-
-.page-nav__list .page-nav__link--current::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    bottom: -8px;
-    content: "";
-    display: block;
-
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    opacity: 1;
-}

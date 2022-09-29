@@ -1,84 +1,62 @@
 .list-contacts {
-    margin-left: auto;
-    column-gap: 50px;
     display: none;
-    align-items: center;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    @media screen and (min-width:768px) {
-            display: block;
-    
-        }
-    
-        @media screen and (min-width:1200px) {
-            display: flex;
-        }
-
-    & {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-    
-            transition: var(--timing-functione);
-        }
 }
 
-.list-contacts__icon {
-    margin-right: 10px;
-    fill: currentColor;
-    vertical-align: middle;
-}
+@media screen and (min-width: 768px) {
+    .list-contacts {
+        margin-left: auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: block;
+        align-items: center;
 
-.list-contacts__link {
-    color: var(--primari-text-color-teme-light);
-    transition: color var(--timing-functione);
-    padding-top: 24px;
-    padding-bottom: 25px;
 
-    display: flex;
-    align-items: center;
+    }
 
-    &:hover,
-    &:focus {
+    .list-contacts__mail {
+        margin-bottom: 10px;
+    }
+
+    .list-contacts__icon {
+        margin-right: 8px;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+
+    .list-contacts__link {
+        color: var(--primari-text-color-teme-light);
+        transition: color var(--timing-functione);
+        padding-top: 21px;
+        padding-bottom: 21px;
+
+        &:hover,
+        &:focus {
             color: var(--accent-color);
-    
+
+
         }
+    }
 
-                @media screen and (min-width:1200px) {
-                    padding-top: 32px;
-                    padding-bottom: 32px;
-        
-        
-                }
-            }
-               
- .list-contacts__link--tablet-phone {
-     @media screen and (max-width:1199px) {
-         padding-bottom: 20px;
+}
+    
+@media screen and (min-width: 1200px) {
+    .list-contacts {
+        display: flex;
+    }
 
-     }
- }
+    .list-contacts__link {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
 
- .list-contacts__link--tablet-email {
-     @media screen and (min-width:768px) {
-         margin-bottom: 10px;
+    .list-contacts__mail {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
 
-     }
-
-     @media screen and (min-width:1200px) {
-         margin-bottom: 0;
-
-     }
-
-
-     @media screen and (max-width:1199px) {
-         padding-top: 20px;
-
-     }
- }
- 
- 
+    .list-contacts__icon {
+        margin-right: 10px;
+    }
+}

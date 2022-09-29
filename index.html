@@ -16,14 +16,10 @@
 <body>
     <header class="page-header">
     <div class="container page-header__container">
-        <nav class="page-nav">
-            <a class="logo page-header__logo" href="/">Web<span class="page-header__logo-top">Studio</span> </a>
-            <nav>
-                <button type="button" class="main-nav__button js-open-menu">
-                    <svg width="40" height="40" aria-label="перемикач мобільного меню">
-                        <use class="main-nav__icone--menu" href="./images-01/icons.svg#icon-menu_24px"></use>
-                    </svg>
-                </button>
+        
+            <a class="logo page-header__logo" 
+            href="/">Web<span class="page-header__logo-top">Studio</span> </a>
+            <nav class="page-nav">
                 <ul class="page-nav__list">
                     <li class="page-nav__item">
                         <a href="./index.html" class="page-nav__link item page-nav__link--current">Студія</a>
@@ -36,16 +32,26 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="list-contacts list">
-                <li class="page-nav__item">
-                    <a href="mailto:info@devstudio.com" class="list-contacts__link list-contacts__link--tablet-email item">
+
+                <button type="button" 
+                class="mobile-menu__btn-open js-open-menu">
+                    <svg class="mobile-menu__open-icon" 
+                    width="40" height="40" aria-label="перемикач мобільного меню">
+                        <use href="./images-01/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            <ul class="list-contacts">
+                <li class="list-contacts__item list-contacts__mail">
+                    <a href="mailto:info@devstudio.com" 
+                    class="list-contacts__link item" aria-label="емайл">
                         <svg class="list-contacts__icon" width="16" height="12">
                             <use href="./images-01/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="page-nav__item">
-                    <a href="tel:+380961111111" class="list-contacts__link list-contacts__link--tablet-phone item">
+                <li class="list-contacts__item">
+                    <a href="tel:+380961111111" 
+                    class="list-contacts__link item">
                         <svg class="list-contacts__icon" width="10" height="16">
                             <use href="./images-01/icons.svg#icon-smartphone"></use>
                         </svg>
@@ -54,49 +60,35 @@
                 </li>
             </ul>
         </div>
-        <div class="main-nav__mobile-menu js-menu-container">
-            <div class="mobile-menu__conteiner">
-                <div class="mobile-page-nav__conteiner">
-                    <button class="mobile-menu__close-button js-close-menu">
-                        <svg class="mobile-menu__close-icone">
-                            <use href="./images-01/icons.svg#icon-close_24px"></use>
+        <div class="mobile-menu js-menu-container">
+            <div class="container mobile-menu__container">
+                    <button class="mobile-menu__btn-close js-close-menu">
+                        <svg class="mobile-menu__close-icon" width="40" height="40">
+                            <use href="./images-01/icons.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <ul class="mobile-page-nav">
-                        <li class="mobile-page-nav__items">
-                            <a href="./index.html" class="mobile-page-nav__link mobile-page-nav__link--current">Студія</a>
+                    <ul class="mobile-nav list">
+                        <li class="mobile-nav__link item">
+                            <a href="./index.html">Студія</a>
                         </li>
-                        <li class="mobile-page-nav__items">
-                            <a href="./portfolio.html" class="mobile-page-nav__link">Портфоліо</a>
+                        <li class="mobile-nav__link item">
+                            <a href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="mobile-page-nav__items">
-                            <a href="" class="mobile-page-nav__link">Контакти</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile-auth-nav__conteiner">
-                    <ul class="mobile-auth-nav">
-                        <li class="mobile-auth-nav__item">
-                            <a class="mobile-auth-nav__link mobile-auth-nav__link--phone" href="tel:+380961111111">+38 096 111
-                                11 11</a>
-                        </li>
-                        <li class="mobile-auth-nav__items">
-                            <a class="mobile-auth-nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <li class="mobile-nav__link item">
+                            <a href="">Контакти</a>
                         </li>
                     </ul>
-                    <ul class="mobile-soshmed">
-                        <li class="mobile-soshmed__item">
-                            <a class="mobile-soshmed__link" href="#">Instagram</a>
-                        </li>
-                        <li class="mobile-soshmed__item">
-                            <a class="mobile-soshmed__link" href="#">Twitter</a>
-                        </li>
-                        <li class="mobile-soshmed__item">
-                            <a class="mobile-soshmed__link" href="#">Facebook</a>
-                        </li>
-                        <li class="mobile-soshmed__item">
-                            <a class="mobile-soshmed__link" href="#">LinkedIn</a>
-                        </li>
+                <div>
+                    <ul class="list">
+                        <li><a href="tel:+380961111111" class="mobile-menu__tel item">+38 096 111 11 11</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="mobile-menu__mail item" 
+                            aria-label="емайл">info@devstudio.com</a></li>
+                        </ul>
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social-list__item"><a href="" class="mobile-social-list__link item">Instagram</a></li>
+                        <li class="mobile-social-list__item"><a href="" class="mobile-social-list__link item">Twitter</a></li>
+                        <li class="mobile-social-list__item"><a href="" class="mobile-social-list__link item">Facebook</a></li>
+                        <li class="mobile-social-list__item"><a href="" class="mobile-social-list__link item">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -173,7 +165,8 @@
                 <li class="creation__item">
                     <div class="creation__card">
                         <picture>
-                            <source srcset="./images-01/creation/whatdowedo.webp 1x, ./images-01/creation/whatdowedo@2x.webp 2x"  
+                            <source srcset="./images-01/creation/whatdowedo.webp 1x, ./images-01/creation/whatdowedo@2x.webp 2x"
+                            media="(min-width: 1200px)"  
                             type="image/webp" />
                             <source srcset="./images-01/creation/whatdowedo.jpg 1x, ./images-01/creation/whatdowedo@2x.jpg 2x" />
                     <img src="./images-01/creation/whatdowedo.jpg" alt="Створення десктопних програм" />
@@ -185,7 +178,8 @@
                     <div class="creation__card">
                         <picture>
                             <source srcset="./images-01/creation/whatdowedo2.webp 1x, ./images-01/creation/whatdowedo2@2x.webp 2x"
-                                type="image/webp" />
+                             media="(min-width: 1200px)"
+                            type="image/webp" />
                             <source srcset="./images-01/creation/whatdowedo2.jpg 1x, ./images-01/creation/whatdowedo2@2x.jpg 2x" />
                     <img src="./images-01/creation/whatdowedo2.jpg" alt="Створення мобільних програм" />
                         </picture>
@@ -196,7 +190,8 @@
                     <div class="creation__card">
                         <picture>
                             <source srcset="./images-01/creation/whatdowedo3.webp 1x, ./images-01/creation/whatdowedo3@2x.webp 2x"
-                                type="image/webp" />
+                            media="(min-width: 1200px)"
+                            type="image/webp" />
                             <source srcset="./images-01/creation/whatdowedo3.jpg 1x, ./images-01/creation/whatdowedo3@2x.jpg 2x" />
                     <img src="./images-01/creation/whatdowedo3.jpg" alt="Створення дизайнерських рішень" 
                         class=""/>
@@ -204,6 +199,7 @@
                         <p class="creation__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                     </div>
                     </li>
+                </ul>
             </div>
         </section>
     
@@ -215,19 +211,19 @@
                     <picture>
                         <source srcset="./images-01/team/product_designer-desktop.jpg 1x, ./images-01/team/product_designer-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
                         <source srcset="./images-01/team/product_designer-desktop.webp 1x, ./images-01/team/product_designer-desktop@2x.webp 2x" media="(min-width: 1200px)"
-                            type="image/webp"/>
+                        type="image/webp" />
                         <source srcset="./images-01/team/product_designer-tablet.jpg 1x, ./images-01/team/product_designer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
                         <source srcset="./images-01/team/product_designer-tablet.webp 1x, ./images-01/team/product_designer-tablet@2x.webp 2x" media="(min-width: 768px)"
-                            type="image/webp"/>
+                        type="image/webp"/>
                         <source srcset="./images-01/team/product_designer-mobile.jpg 1x, ./images-01/team/product_designer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
                         <source srcset="./images-01/team/product_designer-mobile.webp 1x, ./images-01/team/product_designer-mobile@2x.webp 2x" media="(max-width: 767px)"
-                            type="image/webp"/>
+                        type="image/webp"/>
                     <img src="./images-01/team/product_designer-desktop.jpg" alt="" />
                     </picture>
                     <div class="team__info">
                     <h3 class="team__worker">Ігор Дем'яненко</h3>
                     <p lang="en" class="team__jobs">Product Designer</p>
-                    <ul class="team-social-list">
+                    <ul class="social-list">
                         <li class="social-list__item">
                             <a lang="en" href="" class="social-list__link">
                                 <svg aria-label="icon-instagram" class="social-list__icon" width="20" height="20">
@@ -258,7 +254,7 @@
                         </li>
                     </ul>
                     </div>
-                </il>
+                </li>
                 <li class="team__item">
                     <picture>
                         <source
@@ -281,7 +277,7 @@
                     <div class="team__info">
                     <h3 class="team__worker">Ольга Рєпіна</h3>
                     <p lang="en" class="team__jobs">Frontend Developer</p>
-                    <ul class="team-social-list">
+                    <ul class="social-list">
                         <li class="social-list__item">
                             <a lang="en" href="" class="social-list__link">
                                 <svg aria-label="icon-instagram" class="social-list__icon" width="20" height="20">
@@ -312,7 +308,7 @@
                         </li>
                     </ul>
                     </div>
-                </il>
+                </li>
                 <li class="team__item">
                     <picture>
                         <source srcset="./images-01/team/marceting-desktop.jpg 1x, ./images-01/team/marceting-desktop@2x.jpg 2x"
@@ -332,7 +328,7 @@
                     <div class="team__info">
                     <h3 class="team__worker">Микола Тарасов</h3>
                     <p lang="en" class="team__jobs">Marketing</p>
-                    <ul class="team-social-list">
+                    <ul class="social-list">
                         <li class="social-list__item">
                             <a lang="en" href="" class="social-list__link">
                                 <svg aria-label="icon-instagram" class="social-list__icon" width="20" height="20">
@@ -363,7 +359,7 @@
                         </li>
                     </ul>
                     </div>
-                </il>
+                </li>
                 <li class="team__item">
                     <picture>
                         <source srcset="./images-01/team/ui_designer-desktop.jpg 1x, ./images-01/team/ui_designer-desktop@2x.jpg 2x"
@@ -383,7 +379,7 @@
                     <div class="team__info">
                     <h3 class="team__worker">Михайло Єрмаков</h3>
                     <p lang="en" class="team__jobs">UI Designer</p>
-                    <ul class="team-social-list">
+                    <ul class="social-list">
                         <li class="social-list__item">
                             <a lang="en" href="" class="social-list__link">
                                 <svg aria-label="icon-instagram" class="social-list__icon" width="20" height="20">
@@ -414,7 +410,7 @@
                         </li>
                     </ul>
                     </div>
-                </il>
+                </li>
             </ul>
             </div>
         </section>
@@ -487,9 +483,9 @@
                 </li>
             </ul>
             </address>
-        <div class="footer__social-div">
+        <div class="footer__social-list">
             <p class="social-list__text">приєднуйтесь</p>
-            <ul class="footer-social-list">
+            <ul class="social-list">
                 <li class="social-list__item--theme_dark">
                     <a lang="en" href="" class="social-list__link social-list__link--theme_dark">
                         <svg aria-label="icon-instagram" class="social-list__icon--theme_dark" width="20" height="20">
@@ -526,8 +522,8 @@
                     <p class="form__text">Підпишіться на розсилку</p>
                     <input type="email" class="form__input" type="text" required placeholder="E-mail">
                 </label>
-                <button class="footer-form-btn" type="submit">Підписатися
-                    <svg class="footer-form-btn__icon" width="24" height="24">
+                <button class="btn-form" type="submit">Підписатися
+                    <svg class="btn-form__icon" width="24" height="24">
                         <use href="./images-01/icons.svg#icon-telegram"></use>
                     </svg>
                 </button>
@@ -537,57 +533,57 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-button" data-modal-close>
-                <svg class="modal-close-icon" width="18" height="18">
-                    <use href="./images-01/icons.svg#icon-close-black"></use>
+            <button type="button" class="modal-form__close-btn" data-modal-close>
+                <svg class="modal-form__close-icon" width="18" height="18">
+                    <use href="./images-01/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-form">
-                <label class="modal-form-filed">
-                    <span class="modal-form-field-desc">Ім'я</span>
-                    <span class="modal-form-input-wrapper">
-                        <input type="text" class="modal-form-input" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+" name="user_name" />
-                        <svg class="modal-form-input-icon" width="18" height="18">
+                <label class="modal-form__filed">
+                    <span class="modal-form__desc">Ім'я</span>
+                    <span class="modal-form__wrapper">
+                        <input type="text" class="modal-form__input" required pattern="[a-zA-Zа-яА-ЯіІїЇ]+" name="user_name" />
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images-01/icons.svg#icon-person"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-field">
-                    <span class="modal-form-field-desc">Телефон</span>
-                    <span class="modal-form-input-wrapper">
-                        <input type="tel" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                <label class="modal-form__field">
+                    <span class="modal-form__desc">Телефон</span>
+                    <span class="modal-form__input-wrapper">
+                        <input type="tel" class="modal-form__input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                             title="xxx-xxx-xx-xx" name="user_tel" />
-                        <svg class="modal-form-input-icon" width="18" height="18">
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images-01/icons.svg#icon-tel"></use>
                     </span>
                     </svg>
                 </label>
-                <label class="modal-form-field">
-                    <span class="modal-form-field-desc">Пошта</span>
-                    <span class="modal-form-input-wrapper">
-                        <input type="email" class="modal-form-input" required name="user_email" />
-                        <svg class="modal-form-input-icon" width="18" height="18">
+                <label class="modal-form__field">
+                    <span class="modal-form__descc">Пошта</span>
+                    <span class="modal-form__input-wrapper">
+                        <input type="email" class="modal-form__input" required name="user_email" />
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images-01/icons.svg#icon-email"></use>
                         </svg>
                     </span>
                 </label>
-                <label class="modal-form-field">
-                    <span class="modal-form-field-desc">Коментар</span>
-                    <textarea name="user_message" class="modal-form-massage" placeholder="Введіть текст"></textarea>
+                <label class="modal-form__field">
+                    <span class="modal-form__desc">Коментар</span>
+                    <textarea name="user_message" class="modal-form__massage" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="modal-form-check-filed">
-                    <input type="checkbox" class="modal-form-check visually-hidden" name="user-policy" required />
-                    <svg class="modal-form-own-check" width="16" height="15">
-                        <use class="modal-form-own-check-icon" href="./images-01/icons.svg#icon-check"></use>
+                <label class="modal-form__check-filed">
+                    <input type="checkbox" class="modal-form__check visually-hidden" name="user-policy" required />
+                    <svg class="modal-form__own-check" width="16" height="15">
+                        <use class="modal-form__own-check-icon" href="./images-01/icons.svg#icon-check"></use>
                     </svg>
-                    <svg class="modal-form-own-checkbox" width="16" height="15">
-                        <use class="modal-form-own-checkbox-icon" href="./images-01/icons.svg#icon-checkbox"></use>
+                    <svg class="modal-form__own-checkbox" width="16" height="15">
+                        <use class="modal-form__own-checkbox-icon" href="./images-01/icons.svg#icon-checkbox"></use>
                     </svg>
-                    <span class="modal-form-field-desc-checkbox">Погоджуюся з розсилкою та приймаю &nbsp;
-                        <a class="modal-form-field-desc-checkbox-link" href="">Умови договору</a></span>
+                    <span class="modal-form__field-desc-checkbox">Погоджуюся з розсилкою та приймаю &nbsp;
+                        <a class="modal-form__field-desc-checkbox-link" href="">Умови договору</a></span>
                 </label>
-                <button type="submit" class="modal-form-submit">Відправити</button>
+                <button type="submit" class="modal-form__submit">Відправити</button>
             </form>
             </div>
     </div>
