@@ -134,7 +134,8 @@ address {
 
   @media screen and (min-width: 1200px) {
       .footer {
-          justify-content: space-between;
+        justify-content: space-between;
+        text-align: inherit;
       }
 
       .footer__address {

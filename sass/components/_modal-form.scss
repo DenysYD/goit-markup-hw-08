@@ -87,7 +87,7 @@
     display: block;
     transition: fill var(--timing-functione);
 
-    .modal-form-input:focus+& {
+    .modal-form__input:focus+& {
         fill: var(--accent-color);
     }
 }
@@ -101,7 +101,7 @@
     resize: none;
     transition: border-color var(--timing-functione);
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
 
     &:focus {
         outline: none;
@@ -109,7 +109,7 @@
     }
 
     &::placeholder {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.17;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
@@ -171,7 +171,7 @@
     display: inline-block;
     margin-left: 22px;
 
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--primari-text-color-teme-light);
@@ -181,7 +181,7 @@
 .modal-form__field-desc-checkbox-link {
     display: inline-block;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: underline;
