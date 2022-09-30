@@ -1,6 +1,6 @@
 @mixin font($fs: 14px, $fw: 700, $lh: 12px) {
     font-size: $fs;
     font-weight: $fw;
-    line-height: $lh/$fs;
+    line-height: $lh;
 } 
 /* @include font(14px, 700, 12px) по умолчанию  */
